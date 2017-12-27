@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Maze52</name>
+    </assembly>
+    <members>
+        <member name="T:Maze52.AboutBox">
+            <summary>
+            Displays the About Box form
+            </summary>
+        </member>
+        <member name="M:Maze52.AboutBox.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="F:Maze52.AboutBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Maze52.AboutBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Maze52.AboutBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Maze52.MainForm">
+            <summary>
+            The main form of the application 
+            </summary>
+        </member>
+        <member name="T:Maze52.MainForm.MyMaze">
+            <summary>
+            Creates a random, perfect (without cycles) maze
+            </summary>
+        </member>
+        <member name="T:Maze52.MainForm.Cell">
+            <summary>
+            Helper class that represents the cell of the grid
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.MainForm_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Handles mouse's clicks as we add or remove obstacles
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.MainForm_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Handles mouse's movements as we "paint" obstacles or move the robot and/or target.
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.MainForm_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            When the user releases the mouse
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.InitializeGrid(System.Boolean)">
+            <summary>
+            Creates a new clean grid or a new maze
+            </summary>
+            <param name="makeMaze">Flag for maze creation</param>
+        </member>
+        <member name="M:Maze52.MainForm.FillGrid">
+            <summary>
+            Gives initial values ​​for the cells in the grid.
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.EnableRadiosAndChecks">
+            <summary>
+            Enables radio buttons and checkboxes
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.DisableRadiosAndChecks">
+            <summary>
+            Disables radio buttons and checkboxes
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.ResetButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            When the user clicks the "Clear" button
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.MazeButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            When the user clicks the "Maze" button
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.ClearButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            When the user clicks the "Clear" button
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.RealTimeButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            When the user clicks the "Real-Time" button
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.RealTime_action">
+            <summary>
+            Action performed during real-time search
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.StepButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            When the user clicks the "Step-by-Step" button
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.AnimationButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            When the user clicks the "Animation" button
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.Animation_action">
+            <summary>
+            Action performed during animated search
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.Timer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Action performed after the time interval of the timer
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.AboutButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            When the user clicks the "About Maze" button
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.CheckTermination">
+            <summary>
+            Checks if we have reached the end of search
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.ExpandNode">
+            <summary>
+            Expands a node and creates its successors
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.CreateSuccesors(Maze52.MainForm.Cell,System.Boolean)">
+            <summary>
+            Creates the successors of a state/cell
+            </summary>
+            <param name="current">The cell for which we ask successors</param>
+            <param name="makeConnected">
+            Flag that indicates that we are interested only on the coordinates 
+            of cells and not on the label 'dist' (concerns only Dijkstra's)</param>
+            <returns>The successors of the cell as a list</returns>
+        </member>
+        <member name="M:Maze52.MainForm.DistBetween(Maze52.MainForm.Cell,Maze52.MainForm.Cell)">
+            <summary>
+            Returns the distance between two cells
+            </summary>
+            <param name="u">The first cell</param>
+            <param name="v">The other cell</param>
+            <returns>The distance between the cells u and v</returns>
+        </member>
+        <member name="M:Maze52.MainForm.IsInList(System.Collections.Generic.List{Maze52.MainForm.Cell},Maze52.MainForm.Cell)">
+            <summary>
+            Returns the index of the cell 'current' in the list 'list'
+            </summary>
+            <param name="list">The list in which we seek</param>
+            <param name="current">The cell we are looking for</param>
+            <returns>The index of the cell in the list. If the cell is not found returns -1</returns>
+        </member>
+        <member name="M:Maze52.MainForm.FindPrev(System.Collections.Generic.List{Maze52.MainForm.Cell},Maze52.MainForm.Cell)">
+            <summary>
+            Returns the predecessor of cell 'current' in list 'list'
+            </summary>
+            <param name="list">The list in which we seek</param>
+            <param name="current">The cell we are looking for</param>
+            <returns>The predecessor of cell 'current'</returns>
+        </member>
+        <member name="M:Maze52.MainForm.PlotRoute">
+            <summary>
+            Calculates the path from the target to the initial position of the robot, 
+            counts the corresponding steps and measures the distance traveled.
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.FindConnectedComponent(Maze52.MainForm.Cell)">
+            <summary>
+            Appends to the list containing the nodes of the graph only
+            the cells belonging to the same connected component with node v.
+            This is a Breadth First Search of the graph starting from node v.
+            </summary>
+            <param name="v">The starting node</param>
+        </member>
+        <member name="M:Maze52.MainForm.InitializeDijkstra">
+            <summary>
+            Initialization of Dijkstra's algorithm
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.MainForm_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Repaints the grid
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.DrawArrow(System.Drawing.Graphics,System.Drawing.Color,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Draws an arrow of specified thickness and color from point (x2,y2) to point (x1,y1)
+            </summary>
+            <param name="g">The graphics object</param>
+            <param name="color">The color of the arrow</param>
+            <param name="thickness">The thickness of the arrow</param>
+            <param name="x1">The x coordinate of point 1</param>
+            <param name="y1">The y coordinate of point 1</param>
+            <param name="x2">The x coordinate of point 2</param>
+            <param name="y2">The y coordinate of point 2</param>
+        </member>
+        <member name="F:Maze52.MainForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Maze52.MainForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Maze52.MainForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Maze52.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:Maze52.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Maze52.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Maze52.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,12 @@
+C:\Users\nkana\source\repos\Maze52\Maze52\bin\Debug\Maze52.exe.config
+C:\Users\nkana\source\repos\Maze52\Maze52\bin\Debug\Maze52.exe
+C:\Users\nkana\source\repos\Maze52\Maze52\bin\Debug\Maze52.pdb
+C:\Users\nkana\source\repos\Maze52\Maze52\obj\Debug\Maze52.csprojResolveAssemblyReference.cache
+C:\Users\nkana\source\repos\Maze52\Maze52\obj\Debug\Maze52.Properties.Resources.resources
+C:\Users\nkana\source\repos\Maze52\Maze52\obj\Debug\Maze52.csproj.GenerateResource.Cache
+C:\Users\nkana\source\repos\Maze52\Maze52\obj\Debug\Maze52.csproj.CoreCompileInputs.cache
+C:\Users\nkana\source\repos\Maze52\Maze52\obj\Debug\Maze52.exe
+C:\Users\nkana\source\repos\Maze52\Maze52\obj\Debug\Maze52.pdb
+C:\Users\nkana\source\repos\Maze52\Maze52\obj\Debug\Maze52.AboutBox.resources
+C:\Users\nkana\source\repos\Maze52\Maze52\obj\Debug\Maze52.MainForm.resources
+C:\Users\nkana\source\repos\Maze52\Maze52\bin\Debug\Maze52.xml

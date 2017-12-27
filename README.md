@@ -1,6 +1,14 @@
 # Maze
 Originally developed by Nikos Kanargias. https://goo.gl/tRaLfe and https://youtu.be/0ol_PptA7rM
 
+Watch demo on YouTube,
+https://youtu.be/DoGSogwcoXc (Java v4.1.0 Greek)
+https://youtu.be/CLbqqb53DLA (Java v4.1.1 English)
+https://youtu.be/0ol_PptA7rM (Java v5.0.0 English)
+https://youtu.be/7GLqy61X2oU (Python v5.1.0 English)
+https://youtu.be/40iDvNZPulY (C# v5.2.0 English)
+
+
 ## v5.0.1
 The main addition in v5.0.1 is a slightly different but much more efficient algorithm for the Real-Time search.
 
